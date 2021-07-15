@@ -1,3 +1,5 @@
+import 'package:file_downlaod_in_flutter/screen/home_screen.dart';
+import 'package:file_downlaod_in_flutter/utility/Strings.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: Strings.appName,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomeScreen(),
     );
   }
 }
